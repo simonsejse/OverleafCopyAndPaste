@@ -3,7 +3,7 @@
 ![wave (3)](https://github.com/simonsejse/OverleafCopyAndPaste/assets/20711558/0ea79561-a1ea-428c-9d03-5f62eeaa6caf)
 
 # OverleafCopyAndPaste
-A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to your Chrome browser.
+A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to [Overleaf](https://www.overleaf.com/) on your Chrome browser.
 
 ## Functionality
 One of the most frustrating aspects of creating documents or reports on Overleaf is the lack of a simple clipboard upload feature. 
