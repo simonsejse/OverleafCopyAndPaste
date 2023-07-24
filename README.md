@@ -13,3 +13,6 @@ This short but very needed functionality will allow you to paste images from you
 
 ## How to install
 I don't even know yet, not finished it.
+
+## Backlog
+- [ ] Add functionality to paste all kinds of files, currently only image extensions are accepted.
