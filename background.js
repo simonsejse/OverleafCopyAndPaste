@@ -14,8 +14,6 @@
 
 console.log("Overleaf Copy and Paste has been loaded successfully!");
 
-// Credit to Stackoverflow | This function is not licensed under the Apache License!
-// Feel free to copy, edit and release this!
 function dataURItoBlob(dataURI) {
   var byteString = atob(dataURI.split(",")[1]);
   var mimeString = dataURI.split(",")[0].split(":")[1].split(";")[0];
