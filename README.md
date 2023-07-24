@@ -21,6 +21,7 @@ Resulting in that when you need to upload a picture and you use a cutting tool f
 Instead, you manually have to save the picture and drag 'n drop the picture onto Overleaf to upload the picture.
 This short but very needed functionality will allow you to paste images from your clipboard easily with just a click of a button.
 
+### Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder.
 <img src="/.github/chrome_QU5sGrdDk3.gif">
 
 ## How to install
