@@ -59,7 +59,7 @@ Do you have any cool features that could potentially be added to the backlog, do
 - [x] Upload multiple images by pasting `CTRL+v`
 - [ ] When `CTRL+v` inside the text area it both adds the image from the clip holder to the desired image folder, but also inserts `begin{figure}...\end{figure}` text from LaTeX (https://github.com/simonsejse/OverleafCopyAndPaste/issues/1).
 - [ ] Add functionality to paste all kinds of files, currently only image extensions are accepted.
-
+- [ ] Add support for folders (https://github.com/simonsejse/OverleafCopyAndPaste/issues/4)
 
 ### 🐞 Bugs
 Currently, no known bugs exist... 
