@@ -25,8 +25,9 @@ This short but very needed functionality will allow you to paste images from you
 <img src="/.github/chrome_QU5sGrdDk3.gif" style="width:700px;" alt="functionality gif"/>
 
 ## 🔧 How to install
+Installation literally only takes around 20-25 seconds, so what are you waiting for.
+<img src="/.github/chrome_8ZJmjdmqxg.gif" style="width:700px;" alt="functionality gif"/>
 
-Gif will be uploaded soon.
 
 ## 📁 Folder extensions supported
 
