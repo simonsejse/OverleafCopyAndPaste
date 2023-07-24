@@ -20,7 +20,14 @@ import { blobToBase64, getTypeStrFromFile } from "./utils";
  *
  * @type {string[]}
  */
-const foldersByPriority = ["assets", "images", "pictures", "figures"];
+const foldersByPriority = [
+  "assets",
+  "images",
+  "pictures",
+  "figures",
+  "figs",
+  "img",
+];
 
 /**
  * This async function is used to get the folder ID using the getImageFolderId function.
