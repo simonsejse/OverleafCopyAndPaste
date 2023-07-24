@@ -26,7 +26,7 @@ This short but very needed functionality will allow you to paste images from you
 
 ## 🔧 How to install
 
-Installation literally only takes around 20-25 seconds, so what are you waiting for?
+Installation literally only takes around 20-25 seconds, so what are you waiting for? Go to [releases](https://github.com/simonsejse/OverleafCopyAndPaste/releases) and download the newest stable version.
 
 ### 📸 Here is a gif of me installing the extension from the release.
 <img src="/.github/chrome_8ZJmjdmqxg.gif" style="width:700px;" alt="functionality gif"/>
