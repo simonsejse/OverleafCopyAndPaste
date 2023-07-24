@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+console.log("Version v1.1.0-alpha loaded!");
+
 import { getFolderId, getImagesFromClipboardItems } from "./imageProcessor";
 
 const url = document.location.pathname + "/upload";
