@@ -100,7 +100,10 @@ export async function getImagesFromClipboardItems(items, folder_id) {
       const image = createImageDTO(folder_id, blob, data);
       return image;
     });
-  return await Promise.all(imagePromises);
+  return await Promise.all(imagePromises).catch((err) => {
+    console.error("Error occured contact @simonsejse on GitHub: ", err);
+    return [];
+  });
 }
 
 /**
