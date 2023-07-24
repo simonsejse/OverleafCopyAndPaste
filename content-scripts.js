@@ -49,7 +49,6 @@ const getFolderId = async () => {
   try {
     const folderId = await getImageFolderId();
     if (folderId !== null) {
-      console.log(folderId);
       return folderId;
     }
   } catch (err) {
