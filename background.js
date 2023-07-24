@@ -12,8 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-console.log("Background script has been loaded");
+console.log("Overleaf Copy and Paste has been loaded successfully!");
 
+// Credit to Stackoverflow | This function is not licensed under the Apache License!
+// Feel free to copy, edit and release this!
 function dataURItoBlob(dataURI) {
   var byteString = atob(dataURI.split(",")[1]);
   var mimeString = dataURI.split(",")[0].split(":")[1].split(";")[0];
@@ -25,35 +27,44 @@ function dataURItoBlob(dataURI) {
   return new Blob([ab], { type: mimeString });
 }
 
+function buildFormDataFromImage(image) {
+  let formData = new FormData();
+  formData.append("targetFolderId", image.targetFolderId);
+  formData.append("name", image.name);
+  formData.append("type", image.type);
+  const blob = dataURItoBlob(image.qqfile);
+  formData.append("qqfile", blob, image.name);
+  return formData;
+}
+
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.message === "CTRL_V_PRESSED") {
     const csrfToken = request.csrfToken;
     const url = `https://www.overleaf.com/${request.url.substring(
       1
-    )}?folder_id=64bd9968f3fa586811992be8`;
+    )}?folder_id=${request.folder_id}`;
 
-    let formData = new FormData();
-    formData.append("targetFolderId", request.images[0].targetFolderId);
-    formData.append("name", request.images[0].name);
-    formData.append("type", request.images[0].type);
+    let images = request.images;
 
-    const blob = dataURItoBlob(request.images[0].qqfile);
-    formData.append("qqfile", blob, request.images[0].name);
+    if (images?.length <= 0) return;
 
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "X-CSRF-Token": csrfToken, // include in URL or headers > for simplicity, headers is more readable
-      },
-      credentials: "include", // include cookies in the request
-      body: formData,
-    })
-      .then((response) => {
-        console.log("Am i reached?");
-        return response.json();
+    const promises = images.map((image) => {
+      let formData = buildFormDataFromImage(image);
+      return fetch(url, {
+        method: "POST",
+        headers: {
+          "X-CSRF-Token": csrfToken, // include in URL or headers > for simplicity, headers is more readable
+        },
+        credentials: "include", // include cookies in the request
+        body: formData,
+      });
+    });
+
+    Promise.all(promises)
+      .then((responses) => {
+        return Promise.all(responses.map((response) => response.json()));
       })
       .then((data) => {
-        console.log("Am i reached 2?");
         console.log("Response: ", data);
         sendResponse({ message: "URL sent to server" });
       })
