@@ -10,7 +10,7 @@
     "128": "images/icon-128.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
   "permissions": ["cookies", "clipboardWrite", "clipboardRead"],
   "host_permissions": ["https://www.overleaf.com/*"],
@@ -25,7 +25,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.overleaf.com/*"],
-      "js": ["content-scripts.js"],
+      "js": ["dist/content-scripts-output.js"],
       "run_at": "document_idle"
     }
   ]
