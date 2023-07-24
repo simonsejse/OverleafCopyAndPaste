@@ -12,7 +12,7 @@
 
 # OverleafCopyAndPaste
 
-A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to [Overleaf](https://www.overleaf.com/) on your Chrome browser.
+A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to [Overleaf](https://www.overleaf.com/) on your Chrome browser. It provides a critical feature that enables users to easily upload images from their clipboard with a simple ctrl+c and ctrl+v operation, eliminating the tedious task of saving and manually uploading images. With OverleafCopyAndPaste, you can focus more on your content and less on the process, enhancing productivity and efficiency when using Overleaf.
 
 ## Functionality
 
@@ -46,3 +46,18 @@ Do you have any cool features that could potentially be added to the backlog, do
 
 ### Bugs
 Currently, no known bugs exist... 
+
+## License
+Copyright 2023 Simonsejse
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
