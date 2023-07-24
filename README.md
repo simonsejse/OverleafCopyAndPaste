@@ -64,6 +64,16 @@ Do you have any cool features that could potentially be added to the backlog, do
 ### 🐞 Bugs
 Currently, no known bugs exist... 
 
+## 🤝 Contributors
+
+A big thank you to everyone who's helped improve OverleafCopyAndPaste! If you decide to contribute to the project, you will be mentioned in the section below.
+
+**Contributors**
+
+<a href="https://github.com/simonsejse/OverleafCopyAndPaste/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=simonsejse/OverleafCopyAndPaste" width="12%" height="12%" />
+</a>
+
 ## 📄 License
 Copyright 2023 Simonsejse
 
