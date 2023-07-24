@@ -36,7 +36,7 @@ At present, this extension operates by accessing your clipboard data, which offe
 
 ## 🔧 How to install
 
-The installation only takes around 20-25 seconds, so what are you waiting for? Go to [releases](https://github.com/simonsejse/OverleafCopyAndPaste/releases) and download the newest stable version.
+The installation only takes around 20-25 seconds, so what are you waiting for? Go to [releases](https://github.com/simonsejse/OverleafCopyAndPaste/releases) and download the newest stable version. If you're looking to further develop head to the **👨‍💻 How can I contribute?** section.
 
 **📸 Installation** Here is a gif provided of me installing the extension from the release files.
 
@@ -71,7 +71,7 @@ A big thank you to everyone who's helped improve OverleafCopyAndPaste! If you de
 ### 👨‍💻 How can I contribute?
 Contributing to OverleafCopyAndPaste is straightforward and appreciated! Here's how you can do it:
 
-1. **Fork and Clone the repository**: Click on the 'Fork' button at the top right corner of this page and clone your forked repository to your local machine.
+1. **Fork and Clone the Repository**: Click on the 'Fork' button at the top right corner of this page and clone your forked repository to your local machine.
 
 2. **Install Dependencies**: After cloning the project, navigate into the project's root directory and run `npm install`. This command installs all the dependencies required for the project as specified in the package.json file.
 
