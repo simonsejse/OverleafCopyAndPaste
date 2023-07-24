@@ -47,6 +47,7 @@ Do you have any cool features that could potentially be added to the backlog, do
 - [x] Upload images by pasting `CTRL+v`
 - [x] Upload multiple images by pasting `CTRL+v`
 - [ ] Add functionality to paste all kinds of files, currently only image extensions are accepted.
+- [ ] When `CTRL+v` inside the text area it both adds the image from the clip holder to the desired image folder, but also inserts `begin{figure}...\end{figure}` text from LaTeX.
 
 ### 🐞 Bugs
 Currently, no known bugs exist... 
