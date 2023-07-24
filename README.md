@@ -10,25 +10,25 @@
 
 ![wave (3)](https://github.com/simonsejse/OverleafCopyAndPaste/assets/20711558/0ea79561-a1ea-428c-9d03-5f62eeaa6caf)
 
-# OverleafCopyAndPaste
+# 🌸 OverleafCopyAndPaste
 
-A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to [Overleaf](https://www.overleaf.com/) on your Chrome browser.
+A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to [Overleaf](https://www.overleaf.com/) on your Chrome browser. It provides a critical feature that enables users to easily upload images from their clipboard with a simple ctrl+c and ctrl+v operation, eliminating the tedious task of saving and manually uploading images. With OverleafCopyAndPaste, you can focus more on your content and less on the process, enhancing productivity and efficiency when using Overleaf.
 
-## Functionality
+## ⚙️ Functionality
 
 One of the most frustrating aspects of creating documents or reports on Overleaf is the lack of a simple clipboard upload feature.
 Resulting in that when you need to upload a picture and you use a cutting tool for capturing the image, you can't upload it directly using the CTRL+V shortcut.
 Instead, you manually have to save the picture and drag 'n drop the picture onto Overleaf to upload the picture.
 This short but very needed functionality will allow you to paste images from your clipboard easily with just a click of a button.
 
-### Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder.
+### 📸 Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder.
 <img src="/.github/chrome_QU5sGrdDk3.gif" style="width:700px;" alt="functionality gif"/>
 
-## How to install
+## 🔧 How to install
 
 Gif will be uploaded soon.
 
-## Folder extensions supported
+## 📁 Folder extensions supported
 
 The folders currently supported in the Chrome Extensions are the following below in the same priority order. That means you just have to have one of the following folders created inside your overleaf project and the extension will find one of these folders by itself.
 
@@ -36,13 +36,28 @@ https://github.com/simonsejse/OverleafCopyAndPaste/blob/7a0dd6230088ac8259fdce45
 
 If you believe that another name should be added, feel free to create a Pull Request. Simply include the new name in the array and provide a mention of it. I will happily accept the request if the name is deemed to be common and useful.
 
-## Backlog
+## 🔄 Backlog
 Do you have any cool features that could potentially be added to the backlog, do not hesitate to create a pull request and request these changes/features or bugs in the backlog.
 
-### Features
+### ✨ Features
 - [x] Upload images by pasting `CTRL+v`
 - [x] Upload multiple images by pasting `CTRL+v`
 - [ ] Add functionality to paste all kinds of files, currently only image extensions are accepted.
 
-### Bugs
+### 🐞 Bugs
 Currently, no known bugs exist... 
+
+## 📄 License
+Copyright 2023 Simonsejse
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
