@@ -1,0 +1,4 @@
+node_modules/
+
+# content-script output file
+dist/
