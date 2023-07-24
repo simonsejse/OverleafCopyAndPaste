@@ -30,6 +30,9 @@ This short but very needed functionality will allow you to paste images from you
 ### 📸 Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder.
 <img src="/.github/chrome_QU5sGrdDk3.gif" style="width:700px;" alt="functionality gif"/>
 
+### 🌀 Very flexible
+At present, this extension operates by accessing your clipboard data, which offers highly flexible functionality. For example, you're able to select specific areas within images, simply press ctrl+c to copy, then paste into Overleaf with ctrl+v, resulting in only your selected area being transferred. A demonstration GIF will be provided soon.
+
 ## 🔧 How to install
 
 Installation literally only takes around 20-25 seconds, so what are you waiting for? Go to [releases](https://github.com/simonsejse/OverleafCopyAndPaste/releases) and download the newest stable version.
