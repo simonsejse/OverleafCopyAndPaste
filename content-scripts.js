@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-const foldersByPriority = ["assets", "images", "pictures", "figures"];
+const foldersByPriority = ["assets", "images", "pictures", "figures", "figs", "img"];
 
 function getImageFolderId() {
   return new Promise((resolve, reject) => {
