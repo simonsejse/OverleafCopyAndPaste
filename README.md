@@ -22,7 +22,7 @@ Instead, you manually have to save the picture and drag 'n drop the picture onto
 This short but very needed functionality will allow you to paste images from your clipboard easily with just a click of a button.
 
 ### Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder.
-<img src="/.github/chrome_QU5sGrdDk3.gif">
+<img src="/.github/chrome_QU5sGrdDk3.gif" style="width:800px;" alt="functionality gif"/>
 
 ## How to install
 
