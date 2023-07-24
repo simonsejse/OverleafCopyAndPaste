@@ -64,11 +64,26 @@ Do you have any cool features that could potentially be added to the backlog, do
 ### 🐞 Bugs
 Currently, no known bugs exist... 
 
-## 🤝 Contributors
+## 🤲 Contribution
 
 A big thank you to everyone who's helped improve OverleafCopyAndPaste! If you decide to contribute to the project, you will be mentioned in the section below.
 
-**Contributors**
+### 👨‍💻 How can I contribute?
+Contributing to OverleafCopyAndPaste is straightforward and appreciated! Here's how you can do it:
+
+1. **Fork and Clone the repository**: Click on the 'Fork' button at the top right corner of this page and clone your forked repository to your local machine.
+
+2. **Set up the project**: To run the project, you need to generate a 'content-scripts-output.js' file inside the 'dist/' folder in the root folder. This can be done by running `npm run build` from the root directory. It uses Webpack to generate all the content needed in the content-script file.
+
+3. **Create a new branch**: Switch to your local repository and create a new branch for your feature, bug fix, or documentation enhancement.
+
+4. **Make changes**: Apply your changes and improvements to this new branch.
+
+5. **Commit and push**: After making all your changes, commit them to your branch and then 'push' the changes to your forked repository on GitHub.
+
+6. **Create a Pull Request (PR)**: On your GitHub repository, click 'New Pull Request' and select your branch to merge to the main branch of OverleafCopyAndPaste. Submit your PR with a clear title and detailed comments explaining your changes.
+
+### 🤝 Contributors
 
 <a href="https://github.com/simonsejse/OverleafCopyAndPaste/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=simonsejse/OverleafCopyAndPaste" width="13%" height="13%" />
