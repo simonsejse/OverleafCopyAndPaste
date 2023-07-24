@@ -15,9 +15,8 @@
 [![JavaScript ES6](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)]()
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/simonsejse/OverleafCopyAndPaste/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/simonsejse/OverleafCopyAndPaste)](https://img.shields.io/github/stars/simonsejse/OverleafCopyAndPaste/stars)
-![GitHub last commit](https://img.shields.io/github/last-commit/simonsejse/OverleafCopyAndPaste)
-![](https://img.shields.io/pypi/v/newsdash?style=flat-square)
+[![GitHub stars](https://img.shields.io/github/stars/simonsejse/OverleafCopyAndPaste)](https://github.com/simonsejse/OverleafCopyAndPaste/stars)
+[![GitHub last commit](https://img.shields.io/github/last-commit/simonsejse/OverleafCopyAndPaste)]()
 
 A Google Chrome extension with the sole purpose of adding copy-and-paste functionality to [Overleaf](https://www.overleaf.com/) on your Chrome browser. It provides a critical feature that enables users to easily upload images from their clipboard with a simple ctrl+c and ctrl+v operation, eliminating the tedious task of saving and manually uploading images. With OverleafCopyAndPaste, you can focus more on your content and less on the process, enhancing productivity and efficiency when using Overleaf.
 
