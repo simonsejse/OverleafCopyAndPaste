@@ -36,9 +36,10 @@ At present, this extension operates by accessing your clipboard data, which offe
 
 ## 🔧 How to install
 
-Installation literally only takes around 20-25 seconds, so what are you waiting for? Go to [releases](https://github.com/simonsejse/OverleafCopyAndPaste/releases) and download the newest stable version.
+The installation only takes around 20-25 seconds, so what are you waiting for? Go to [releases](https://github.com/simonsejse/OverleafCopyAndPaste/releases) and download the newest stable version.
 
-### 📸 Here is a gif of me installing the extension from the release.
+**📸 Installation** Here is a gif provided of me installing the extension from the release files.
+
 <img src="/.github/chrome_8ZJmjdmqxg.gif" style="width:700px;" alt="functionality gif"/>
 
 
