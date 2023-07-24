@@ -19,8 +19,16 @@ Resulting in that when you need to upload a picture and you use a cutting tool f
 Instead, you manually have to save the picture and drag 'n drop the picture onto Overleaf to upload the picture. 
 This short but very needed functionality will allow you to paste images from your clipboard easily with just a click of a button.
 
-## How to install
-I don't even know yet, not finished it.
 
+
+## How to install
+Gif will be uploaded soon.
+
+## Folder extensions supported
+The folders currently supported in the Chrome Extensions are the following below in the same priority order. That means you just have to have one of the following folders created inside your overleaf project and the extension will find one of these folders by itself.
+
+https://github.com/simonsejse/OverleafCopyAndPaste/blob/7a0dd6230088ac8259fdce454bcafe0cd0991a78/content-scripts.js#L15
+
+If you believe that another name should be added, feel free to create a Pull Request. Simply include the new name in the array and provide a mention of it. I will happily accept the request if the name is deemed to be common and useful.
 ## Backlog
 - [ ] Add functionality to paste all kinds of files, currently only image extensions are accepted.
