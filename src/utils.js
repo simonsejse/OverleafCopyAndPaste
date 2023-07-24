@@ -20,8 +20,8 @@
 export function blobToBase64(blob) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.onloadend = () => {
-      resolve(reader.result);
+    reader.onload = (e) => {
+      resolve(e.target.result);
     };
     reader.onerror = reject;
     reader.readAsDataURL(blob); //Base64
@@ -29,12 +29,10 @@ export function blobToBase64(blob) {
 }
 
 /**
- * Extracts the extension from a blob's MIME type.
- * @param {Blob} blob - The blob to get the extension for.
- * @returns {string} The blob's file extension.
+ * Extracts the file type string from a given file object.
+ * @param {File} file The file object from which to extract the type.
+ * @returns {string} The file type as a string if it exists, otherwise an empty string.
  */
-export function extensionFromBlob(blob) {
-  const type = blob.type;
-  const typeSplitted = type.split("/");
-  return typeSplitted[typeSplitted.length - 1].trim();
+export function getTypeStrFromFile(file) {
+  return file?.type?.split("/")[1]?.trim() ?? "";
 }

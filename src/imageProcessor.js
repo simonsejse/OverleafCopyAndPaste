@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { blobToBase64, extensionFromBlob } from "./utils";
+import { blobToBase64, getTypeStrFromFile } from "./utils";
 
 /**
  * Array of folder names, arranged by priority. This array is used in getImageFolderId function
@@ -41,39 +41,6 @@ export async function getFolderId() {
     );
     return null;
   }
-}
-
-/**
- * Reads items from the clipboard.
- * @returns {Promise<ClipboardItem[]>} The clipboard's contents as a Promise.
- */
-export async function getClipboardItems() {
-  const clipboardItems = await navigator.clipboard.read();
-  return clipboardItems;
-}
-
-/**
- * Formats images from clipboard items for use with Overleaf.
- * @param {ClipboardItem[]} clipboardItems - Items from the clipboard.
- * @returns {Promise<Object[]>} Promise resolving to an array of image objects formatted for Overleaf.
- */
-export async function getImagesAsDTO(clipboardItems, folder_id) {
-  let imagesPromises = clipboardItems.flatMap((item) => {
-    return item.types
-      .filter((type) => type.startsWith("image/"))
-      .map(async (type) => {
-        const blob = await item.getType(type);
-        const base64Data = await blobToBase64(blob);
-        return {
-          targetFolderId: folder_id,
-          name: `rename_me.${extensionFromBlob(blob)}`,
-          type: blob.type,
-          qqfile: base64Data,
-        };
-      });
-  });
-  let images = await Promise.all(imagesPromises);
-  return images;
 }
 
 /**
@@ -109,4 +76,41 @@ function getImageFolderId() {
       reject(new Error("Folder not found"));
     }, 20000);
   });
+}
+
+/**
+ * Processes clipboard items, converting any found images into a specific DTO.
+ * @param {DataTransferItemList} items - The list of clipboard items to process.
+ * @param {string} folder_id - The ID of the folder where the images will be stored.
+ * @returns {Promise<Array>} A promise that resolves to an array of image DTOs.
+ */
+export async function getImagesFromClipboardItems(items, folder_id) {
+  const imagePromises = Array.from(items)
+    .filter((item) => item.kind === "file")
+    .map((item) => item.getAsFile())
+    .map(async (blob) => {
+      const data = await blobToBase64(blob);
+      const image = createImageDTO(folder_id, blob, data);
+      return image;
+    });
+  return await Promise.all(imagePromises);
+}
+
+/**
+ * Creates an image Data Transfer Object (DTO) using provided parameters.
+ *
+ * @param {string} folder_id - The ID of the folder where the image will be stored.
+ * @param {File} file - The file object containing information about the image.
+ * @param {string} qqfile - The base64 representation of the image.
+ *
+ * @returns {Object} The image DTO with properties: targetFolderId, name, type and qqfile.
+ */
+export function createImageDTO(folder_id, file, qqfile) {
+  console.log(file.type);
+  return {
+    targetFolderId: folder_id,
+    name: file.name,
+    type: getTypeStrFromFile(file),
+    qqfile: qqfile,
+  };
 }

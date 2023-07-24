@@ -36,7 +36,7 @@ function buildFormDataFromImage(image) {
 }
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  if (request.message === "CTRL_V_PRESSED") {
+  if (request.message === "PASTE_INVOKED") {
     const csrfToken = request.csrfToken;
     const url = `https://www.overleaf.com/${request.url.substring(
       1

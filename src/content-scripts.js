@@ -11,15 +11,10 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import {
-  getFolderId,
-  getClipboardItems,
-  getImagesAsDTO,
-} from "./imageProcessor";
 
-function isPasteEvent(e) {
-  return (e.ctrlKey || e.metaKey) && e.key === "v";
-}
+import { getFolderId, getImagesFromClipboardItems } from "./imageProcessor";
+
+const url = document.location.pathname + "/upload";
 
 let folder_id;
 
@@ -27,25 +22,27 @@ window.onload = async function () {
   folder_id = await getFolderId();
 };
 
-document.addEventListener("keydown", function (e) {
-  if (!isPasteEvent(e) || !folder_id) return;
+document.addEventListener("paste", function (e) {
+  if (!folder_id) return;
 
-  (async function () {
-    const clipboardItems = await getClipboardItems();
-    const images = await getImagesAsDTO(clipboardItems, folder_id);
+  (async () => {
+    let clipboardData = e.clipboardData || window?.clipboardData;
+    let items = clipboardData.items;
+    let images = await getImagesFromClipboardItems(items, folder_id);
 
-    if (images) {
-      var url = document.location.pathname + "/upload";
-      var csrfToken = document.querySelector(
-        'meta[name="ol-csrfToken"]'
-      ).content;
-      chrome.runtime.sendMessage({
-        message: "CTRL_V_PRESSED",
-        url: url,
-        csrfToken: csrfToken,
-        folder_id: folder_id,
-        images: images,
-      });
+    if (images.length === 0) {
+      alert("No files were successfully processed.");
+      return;
     }
+
+    var csrfToken = document.querySelector('meta[name="ol-csrfToken"]').content;
+
+    chrome.runtime.sendMessage({
+      message: "PASTE_INVOKED",
+      url: url,
+      csrfToken: csrfToken,
+      folder_id: folder_id,
+      images: images,
+    });
   })();
 });
