@@ -72,6 +72,5 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         console.log("Error: ", error);
       });
   }
-  // to enable asynchronous use of 'sendResponse', return true
   return true;
 });
