@@ -37,5 +37,12 @@ https://github.com/simonsejse/OverleafCopyAndPaste/blob/7a0dd6230088ac8259fdce45
 If you believe that another name should be added, feel free to create a Pull Request. Simply include the new name in the array and provide a mention of it. I will happily accept the request if the name is deemed to be common and useful.
 
 ## Backlog
+Do you have any cool features that could potentially be added to the backlog, do not hesitate to create a pull request and request these changes/features or bugs in the backlog.
 
+### Features
+- [x] Upload images by pasting `CTRL+v`
+- [x] Upload multiple images by pasting `CTRL+v`
 - [ ] Add functionality to paste all kinds of files, currently only image extensions are accepted.
+
+### Bugs
+Currently, no known bugs exist... 
