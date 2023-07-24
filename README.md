@@ -73,15 +73,17 @@ Contributing to OverleafCopyAndPaste is straightforward and appreciated! Here's 
 
 1. **Fork and Clone the repository**: Click on the 'Fork' button at the top right corner of this page and clone your forked repository to your local machine.
 
-2. **Set up the project**: To run the project, you need to generate a 'content-scripts-output.js' file inside the 'dist/' folder in the root folder. This can be done by running `npm run build` from the root directory. It uses Webpack to generate all the content needed in the content-script file.
+2. **Install Dependencies**: After cloning the project, navigate into the project's root directory and run `npm install`. This command installs all the dependencies required for the project as specified in the package.json file.
 
-3. **Create a new branch**: Switch to your local repository and create a new branch for your feature, bug fix, or documentation enhancement.
+3. **Set up the project**: To run the project, you need to generate a 'content-scripts-output.js' file inside the 'dist/' folder in the root folder. This can be done by running `npm run build` from the root directory. It uses Webpack to generate all the content needed in the content-script file.
 
-4. **Make changes**: Apply your changes and improvements to this new branch.
+4. **Create a new branch**: Switch to your local repository and create a new branch for your feature, bug fix, or documentation enhancement.
 
-5. **Commit and push**: After making all your changes, commit them to your branch and then 'push' the changes to your forked repository on GitHub.
+5. **Make changes**: Apply your changes and improvements to this new branch.
 
-6. **Create a Pull Request (PR)**: On your GitHub repository, click 'New Pull Request' and select your branch to merge to the main branch of OverleafCopyAndPaste. Submit your PR with a clear title and detailed comments explaining your changes.
+6. **Commit and push**: After making all your changes, commit them to your branch and then 'push' the changes to your forked repository on GitHub.
+
+7. **Create a Pull Request (PR)**: On your GitHub repository, click 'New Pull Request' and select your branch to merge to the main branch of OverleafCopyAndPaste. Submit your PR with a clear title and detailed comments explaining your changes.
 
 ### 🤝 Contributors
 
