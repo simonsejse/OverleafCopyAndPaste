@@ -71,7 +71,7 @@ A big thank you to everyone who's helped improve OverleafCopyAndPaste! If you de
 **Contributors**
 
 <a href="https://github.com/simonsejse/OverleafCopyAndPaste/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=simonsejse/OverleafCopyAndPaste" width="12%" height="12%" />
+  <img src="https://contrib.rocks/image?repo=simonsejse/OverleafCopyAndPaste" width="13%" height="13%" />
 </a>
 
 ## 📄 License
