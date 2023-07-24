@@ -25,7 +25,8 @@ This short but very needed functionality will allow you to paste images from you
 <img src="/.github/chrome_QU5sGrdDk3.gif" style="width:700px;" alt="functionality gif"/>
 
 ## 🔧 How to install
-Installation literally only takes around 20-25 seconds, so what are you waiting for.
+Installation literally only takes around 20-25 seconds, so what are you waiting for?
+### 📸 Here is a gif of me installing the extension from the release.
 <img src="/.github/chrome_8ZJmjdmqxg.gif" style="width:700px;" alt="functionality gif"/>
 
 
