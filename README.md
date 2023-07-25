@@ -46,7 +46,7 @@ The installation only takes around 20-25 seconds, so what are you waiting for? G
 
 The folders currently supported in the Chrome Extensions are the following below in the same priority order. That means you just have to have one of the following folders created inside your overleaf project and the extension will find one of these folders by itself.
 
-https://github.com/simonsejse/OverleafCopyAndPaste/blob/7a0dd6230088ac8259fdce454bcafe0cd0991a78/content-scripts.js#L15
+https://github.com/simonsejse/OverleafCopyAndPaste/blob/437e795c640f83927ad504075c4b67b876e9fb26/src/imageProcessor.js#L17-L30
 
 If you believe that another name should be added, feel free to create a Pull Request. Simply include the new name in the array and provide a mention of it. I will happily accept the request if the name is deemed to be common and useful.
 
