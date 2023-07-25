@@ -3,12 +3,16 @@ on:
   push:
     branches:
       - "release/*"
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -30,5 +34,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Automatically built for release"
-            git push https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+            git push
           fi
