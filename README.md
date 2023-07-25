@@ -27,11 +27,11 @@ Resulting in that when you need to upload a picture and you use a cutting tool f
 Instead, you manually have to save the picture and drag 'n drop the picture onto Overleaf to upload the picture.
 This short but very needed functionality will allow you to paste images from your clipboard easily with just a click of a button.
 
- **📸 Demonstration** Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder
- 
-<img src="/.github/chrome_QU5sGrdDk3.gif" style="width:700px;" alt="functionality gif"/>
+**📸 Demonstration** Here is a gif of me taking a screenshot and using `ctrl+c` and `ctrl+v` to paste it into my assets folder
 
-**🌀 Very flexible** 
+<img src="/images/how_to_use.gif" style="width:700px;" alt="functionality gif"/>
+
+**🌀 Very flexible**
 At present, this extension operates by accessing your clipboard data, which offers highly flexible functionality. For example, you're able to select specific areas within images, simply press ctrl+c to copy, then paste into Overleaf with ctrl+v, resulting in only your selected area being transferred. A demonstration GIF will be provided soon.
 
 ## 🔧 How to install
@@ -40,8 +40,7 @@ The installation only takes around 20-25 seconds, so what are you waiting for? G
 
 **📸 Installation** Here is a gif provided of me installing the extension from the release files.
 
-<img src="/.github/chrome_8ZJmjdmqxg.gif" style="width:700px;" alt="functionality gif"/>
-
+<img src="/images/how_to_install.gif" style="width:700px;" alt="functionality gif"/>
 
 ## 📁 Folder extensions supported
 
@@ -52,9 +51,11 @@ https://github.com/simonsejse/OverleafCopyAndPaste/blob/7a0dd6230088ac8259fdce45
 If you believe that another name should be added, feel free to create a Pull Request. Simply include the new name in the array and provide a mention of it. I will happily accept the request if the name is deemed to be common and useful.
 
 ## 🔄 Backlog
+
 Do you have any cool features that could potentially be added to the backlog, do not hesitate to create a pull request and request these changes/features or bugs in the backlog.
 
 ### ✨ Features
+
 - [x] Upload images by pasting `CTRL+v`
 - [x] Upload multiple images by pasting `CTRL+v`
 - [ ] When `CTRL+v` inside the text area it both adds the image from the clip holder to the desired image folder, but also inserts `begin{figure}...\end{figure}` text from LaTeX (https://github.com/simonsejse/OverleafCopyAndPaste/issues/1).
@@ -62,13 +63,15 @@ Do you have any cool features that could potentially be added to the backlog, do
 - [ ] Add support for folders (https://github.com/simonsejse/OverleafCopyAndPaste/issues/4)
 
 ### 🐞 Bugs
-Currently, no known bugs exist... 
+
+Currently, no known bugs exist...
 
 ## 🤲 Contribution
 
 A big thank you to everyone who's helped improve OverleafCopyAndPaste! If you decide to contribute to the project, you will be mentioned in the section below.
 
 ### 👨‍💻 How can I contribute?
+
 Contributing to OverleafCopyAndPaste is straightforward and appreciated! Here's how you can do it:
 
 1. **Fork and Clone the Repository**: Click on the 'Fork' button at the top right corner of this page and clone your forked repository to your local machine.
@@ -92,6 +95,7 @@ Contributing to OverleafCopyAndPaste is straightforward and appreciated! Here's 
 </a>
 
 ## 📄 License
+
 Copyright 2023 Simonsejse
 
 Licensed under the Apache License, Version 2.0 (the "License");
