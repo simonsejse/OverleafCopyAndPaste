@@ -1,4 +1,7 @@
 node_modules/
 
-# content-script output file
-dist/
+# Ignore dist directory everywhere
+/dist/
+
+# But not in release branches
+!/release/dist/
