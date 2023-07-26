@@ -116,7 +116,6 @@ export async function getImagesFromClipboardItems(items, folder_id) {
  * @returns {Object} The image DTO with properties: targetFolderId, name, type and qqfile.
  */
 export function createImageDTO(folder_id, file, qqfile) {
-  console.log(file.type);
   return {
     targetFolderId: folder_id,
     name: file.name,
